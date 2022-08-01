@@ -1,0 +1,180 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.banner {
+  width:100%;
+  height:140vh;
+  background-image:linear-gradient(rgba(0,0,0,0.62),rgba(0,0,0,0.62)),url(BG.jpeg);
+  background-size:cover;
+  background-position:center;
+  
+ }
+ 
+ .navbar {
+  display:flex;
+/*  border:3px solid red; */
+  flex-direction:row;
+  justify-content:flex-end;
+  
+ }
+ 
+ .child1 { 
+   margin-right:540px;
+   transition: transform 1s 2s;
+
+ /*  border:3px solid palegreen; */
+ }
+ 
+ .child1:hover {
+   transform: rotate(360deg);
+ }
+ 
+ .child {
+   top:16px;
+   bottom:0px;
+   height:28px;
+   font-size:25px;
+   margin:44px;
+   position:relative;
+   text-transform:uppercase;
+ /*  border:3px solid blue; */
+ }
+ 
+ .child a {
+   text-decoration:none;
+   color:white;
+ }
+
+.child::after {
+  content:'';
+  height:2px;
+  width:0;
+  background-color:rgb(260,10,30);
+  left:0;
+  bottom:-7px;
+  position:absolute;
+  transition:0.6s;
+}
+
+.child:hover::after {
+  width:100%;
+}
+
+.line {
+  float: right;
+  bottom:90px;
+}
+
+.content {
+  color: white;
+  display:inline-block;
+  width:900px;
+}
+
+.content h1 {
+/*  border:3px solid red; */
+  
+  margin-left:325px;
+  margin-top:230px;
+  font-size: 50px;
+  text-transform: uppercase;
+  
+}
+
+.content1 {
+  text-align:center;
+
+}
+.content1 h1 {
+  background-color: rgba(150,0,0,0.22);
+  width:1200px;
+  display:inline-block;
+  margin-top:100px;
+  padding:7px;
+/*  margin-left:432px; */
+  color: white;
+  font-size: 40px;
+  text-transform:uppercase;
+}
+
+.pic {
+/* border:3px solid greenyellow; */
+}
+
+.container {
+  max-width: 1100px;
+  
+  margin: auto;
+}
+.footer {
+  background-color:rgba(1,1,1,0.72);
+  padding: 70px 0;
+  margin-top:480px;
+  height: 270px;
+}
+
+.footer1 ul {
+  list-style: none;
+}
+
+.footer1 ul li {
+  position: relative;
+  width:66px;
+  margin:10px;
+  
+}
+
+.footer1 ul li a {
+  text-decoration: none;
+  color:gray;
+  font-family: serif;
+
+}
+
+.footer1 ul li::after {
+  content:'';
+  height: 1px;
+  background-color: red;
+  position: absolute;
+  left:0;
+  width:0;
+  bottom:-1px;
+  transition: 0.7s;
+}
+
+.footer1 ul li:hover::after {
+  width: 90%;
+}
+
+.footer1 h3 {
+  color: white;
+  margin-bottom: 30px;
+  position: relative;
+  font-family: serif;
+  text-transform: uppercase;
+  
+}
+
+.footer1 h3::after{
+  content: '';
+  height: 2px;
+  background-color: red;
+  width: 80%;
+  bottom: -5px;
+  left:0;
+  position: absolute;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 300px;
+}
+
+.footer1 {
+  width: 25%;
+  padding:0 15px;
+}
+
